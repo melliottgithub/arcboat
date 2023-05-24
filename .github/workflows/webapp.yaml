@@ -23,7 +23,7 @@ jobs:
       - name: App build
         working-directory: webapp
         env:
-          REACT_API_BASE_URL: ${{ vars.REACT_API_BASE_URL }}
+          REACT_APP_API_BASE_URL: ${{ vars.REACT_APP_API_BASE_URL }}
         run: NODE_ENV=production yarn build
 
       - name: Configure AWS credentials
